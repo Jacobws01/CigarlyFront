@@ -1,0 +1,269 @@
+.navbar {
+  background: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.navbarcontainer {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.navbarlogo {
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbaricon {
+  margin-right: 0.5rem;
+}
+
+.navbarh1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.navmenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  flex: end;
+  margin-left: 20px;
+}
+
+.navitem {
+  height: 80px;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  color: #202120;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.navlinks:hover {
+  color: #FFE06C;
+  transition: 0.2s ease;
+}
+
+.navlinkslog {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 19px;
+  background-color: #FFD06C;
+}
+
+.navlinkslog:hover {
+  color: #534D4D;
+  transition: 0.2s ease;
+}
+
+.menuicon {
+  display: none;
+}
+
+.auth {
+    font-size: 18px;
+    align-self: center;
+
+}
+
+.auth:hover {
+  transition: 0.2s ease;
+  transform: scale(1.03);
+}
+
+.clockdiv {
+  padding-top: 1vh;
+  margin-left: 2vw;
+}
+
+.clocktext {
+  padding-left: 1vw;
+  margin-top: 6px;
+}
+
+.clocktext h5 {
+  color: #202120;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-top: 14px;
+}
+
+.clocktext p {
+  font-size: 20px;
+  color: #FFD06C;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.clockholder {
+  display: flex;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .navmenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .navitem:nth-child(3) {
+    display: none;
+  }
+
+  .menuicon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+  .navlinks:hover {
+    color: #f00946;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+
+  .navitem:hover {
+    border: none;
+  }
+
+  .navitem {
+    width: 100%;
+  }
+
+  .auth {
+    margin-right: 27px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .auth {
+    font-size: 16px;
+  }
+
+  .clockholder {
+    display: none;
+  }
+
+  .navbarh1 {
+    font-size: 27px;
+    margin-bottom: 9px;
+  }
+
+  .menuicon {
+    top: 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .auth {
+    font-size: 14px;
+  }
+
+  .navbarcontainer {
+    padding-left: 18px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .auth {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .auth {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+
+  .menuicon {
+    font-size: 18px;
+    top: 18px;
+    right: 9px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .auth {
+    margin-top: 12px;
+  }
+
+  .menuicon {
+    font-size: 18px;
+    top: 24px;
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .auth {
+    margin-left: 9px;
+  }
+
+  .navbarh1 {
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .auth {
+    margin-top: 63px;
+  }
+}

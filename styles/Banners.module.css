@@ -1,0 +1,143 @@
+.bannercontainer {
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+@media (min-width: 1200px) {
+		.container {
+    		max-width: 1170px;
+		}
+	}
+
+
+.home {
+	background-image: url("../public/breadcrumb.jpg");
+}
+
+.home {
+ 	position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    padding-top: 245px;
+    padding-bottom: 200px;
+    display: block;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .home{
+        padding-top: 200px;
+        padding-bottom: 160px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .home {
+        padding-top: 200px;
+        padding-bottom: 160px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home {
+        padding-top: 180px;
+        padding-bottom: 120px;
+    }
+}
+
+@media (max-width: 399px) {
+    .home {
+        padding-top: 160px;
+        padding-bottom: 90px;
+    }
+}
+
+.home::after {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-color: #757a89;
+    opacity: 0.6;
+    content: '';
+}
+
+.bannertext {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+}
+
+.bannertext h1 {
+	font-size: 72px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.spantext {
+	font-size: 300px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    z-index: -1;
+    opacity: 0.2;
+    display: inline-block;
+}
+
+.btext {
+	margin-bottom: 0;
+}
+
+.sbtext {
+	margin-top: 9px;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+	.bannercontainer {
+		height: 300px;
+	}
+
+	.btext {
+		font-size: 24px;
+	}
+
+	.sbtext {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.bannercontainer {
+		height: 250px;
+	}
+
+	.btext {
+		font-size: 18px;
+	}
+
+	.sbtext {
+		font-size: 12px;
+	}
+}

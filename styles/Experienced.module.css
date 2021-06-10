@@ -1,0 +1,377 @@
+.experiencedsection {
+	padding-bottom: 120px;
+	padding-top: 120px;
+	display: block;
+}
+
+.container {
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+@media (max-width: 992px) {
+	.container {
+    max-width: 960px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+    max-width: 720px;
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+    max-width: 540px;
+	}
+
+	.experiencedsection {
+		padding-top: 25px;
+	}
+}
+
+
+.rowalignjustify {
+	align-items: center!important;
+	justify-content: center!important;
+	display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.rowft {
+	display: block;
+}
+
+.rowftmasonry {
+	position: relative;
+    height: 718px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.singlebox1 {
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+}
+
+.singlebox2 {
+	position: absolute;
+    left: 292.5px;
+    top: 0px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+}
+
+.singlebox3 {
+	position: absolute;
+    left: 0px;
+    top: 329px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+}
+
+.singlebox4 {
+	position: absolute;
+    left: 292.5px;
+    top: 359px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+}
+
+.featurebox {
+	background-color: #fff;
+    padding: 50px 30px;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 10px 20px 0px rgb(179 202 216 / 10%);
+    text-align: center!important;
+    display: block;
+}
+
+.featurebox h4 {
+	text-transform: uppercase;
+    font-size: 24px;
+    color: #202120;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin: 0px 0px 25px 0px;
+    line-height: 1.2;
+    text-align: center!important;
+    display: block;
+}
+
+.icondiv {
+	margin: 0px 0px 40px 0px;
+	height: 70px;
+    width: 70px;
+	text-align: center!important;
+	display: block;
+	line-height: 80px;
+	background-color: #FFE06C;
+	text-align: center;
+}
+
+.icondiv:hover {
+	transition: ease 0.2s;
+	background-color: #202120;
+}
+
+
+.icon {
+	color: #202120;
+	text-align: center;
+    font-size: 24px;
+    transition: all 0.3s ease-out 0s;
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+}
+
+.icondiv:hover > .icon {
+	color: #fff;
+}
+
+
+.count {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    line-height: 1;
+    color: #eef6fa;
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    z-index: -1;
+    display: inline-block;
+    text-align: center!important;
+}
+
+@media (min-width: 768px) {
+	.singlebox1,
+	.singlebox2,
+	.singlebox3,
+	.singlebox4 {
+	flex: 0 0 50%;
+    max-width: 50%;
+	}
+}
+
+@media (max-width: 768px) {
+	.singlebox2,
+	.singlebox4 {
+	display: none;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.xpfeatures {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+	}
+}
+
+@media (max-width: 991px) {
+	.xpfeatures{
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+    	max-width: 1170px;
+	}
+}
+
+/* RIGHT SIDE */
+
+.rightdiv {
+	position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+}
+
+@media (min-width: 992px) {
+	.rightdiv {
+    flex: 0 0 50%;
+    max-width: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+	.rightdiv {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+	}
+}
+
+.rightfttext {
+	padding-left: 50px;
+}
+
+
+.sectitle {
+	margin-bottom: 40px;
+	display: block;
+}
+
+.rightfttext p {
+	font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #202120;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.sectitle h2 {
+	font-size: 48px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: #202120;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    margin: 0px;
+}
+
+
+.titletag {
+	padding-left: 50px;
+	text-transform: uppercase;
+    font-weight: 700;
+    color: #FFE06C;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.titletag::before {
+	position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 30px;
+    background-color: #FFE06C;
+    content: '';
+}
+
+.featureicons {
+	margin: 40px 0px 0px 0px;
+	padding: 0px;
+}
+
+.featureicons li {
+	display: inline-block;
+    margin-right: 75px;
+    text-align: center;
+}
+
+.featureicons li h6 {
+	text-transform: uppercase;
+    margin: 15px 0px 0px 0px;
+    font-size: 16px;
+    color: #202120;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+.rightmainbtn {
+	background-color: #FFE06C;
+    border-color: #FFE06C;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    color: #202120;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out 0s;
+    padding: 0 45px;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    border-color: #FFE06C!important;
+    border: 2px solid #fff;
+    margin-top: 40px;
+}
+
+.rightmainbtn::before {
+	position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 10px;
+    height: 2px;
+    content: '';
+    background-color: #202120;
+}
+
+.rightmainbtn::after {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 2px;
+    height: 10px;
+    content: '';
+    background-color: #202120;
+    transition: all 0.3s ease-out 0s;
+}
+
+
+.rightmainbtn:hover {
+  transition: ease 0.3s;
+  background-color: transparent;
+  color: #202120;
+}
+
+.rightmainbtn:hover::before {
+  transition: ease 0.3s;
+  background-color: #202120;
+}
+
+.rightmainbtn:hover::after {
+  transition: ease 0.3s;
+  background-color: #202120;
+}
+
+.rightmainbtn:hover {
+  transition: ease 0.3s;
+  background-color: transparent;
+  border-color: #202120!important;
+}

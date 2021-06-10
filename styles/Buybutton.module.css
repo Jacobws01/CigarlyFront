@@ -1,0 +1,63 @@
+.shopbutton {
+	opacity: 1;
+    visibility: hidden;
+    top: 130px;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transform: translateX(-50%);
+    transition: .3s;
+}
+
+.shopsingbutton {
+	padding: 0 30px;
+    height: 55px;
+    line-height: 52px;
+    display: inline-flex;
+    background-color: #FFE06C;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    color: #202120;
+    text-transform: uppercase;
+    transition: all 0.3s ease-out 0s;
+    border: 2px solid #FFE06C;
+    position: relative;
+    height: 60px;
+    
+}
+
+.shopbutton:hover {
+	visibility: visible;
+}
+
+.shopsingbutton::before {
+    background-color: #202120;
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    content: '';
+    transition: all 0.3s ease-out 0s;
+}
+
+.shopsingbutton:hover {
+	transition: 0.2s ease;
+	background: #fff;
+	border: 2px solid #fff;
+}
+
+.shopsingbutton::after {
+	background-color: #202120;
+	position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 10px;
+    width: 2px;
+    content: '';
+    transition: all 0.3s ease-out 0s;
+}
