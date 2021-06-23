@@ -229,12 +229,12 @@ export default function Shop({products1,
 export async function getStaticProps() {
   const products_res = await fetch(`${API_URL}/products/`)
   const productsfull = await products_res.json()
-  let products1 = productsfull.filter(person1 => person1.store > 999);
-  let products2 = productsfull.filter(person2 => person2.store === 500);
-  let products3 = productsfull.filter(person3 => person3.store === 350);
-  let products4 = productsfull.filter(person4 => person4.store === 800);
-  let products5 = productsfull.filter(person5 => person5.store === 250);
-  let products6 = productsfull.filter(person6 => person6.store === 600);
+  let products1 = productsfull.filter(person1 => person1.price === 79.99);
+  let products2 = productsfull.filter(person2 => person2.price === 34.95);
+  let products3 = productsfull.filter(person3 => person3.price === 27.99);
+  let products4 = productsfull.filter(person4 => person4.price === 59.99);
+  let products5 = productsfull.filter(person5 => person5.price === 39.99);
+  let products6 = productsfull.filter(person6 => person6.price === 64.99);
 
   return {
     props: {
