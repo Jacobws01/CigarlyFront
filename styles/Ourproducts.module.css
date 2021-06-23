@@ -386,11 +386,11 @@
 
 .serviceslink:hover {
 	transition: ease 0.2s;
-	color: #DCE123;
+	color: #fff;
 	background-color: #000;
 	padding: 2px 2px;
-	transform: scale(1.03);
-	border-radius: 6px;
+	transform: scale(1.02);
+	border-radius: 3px;
 }
 
 .serviceslinkblack {
