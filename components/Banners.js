@@ -14,6 +14,32 @@ export function Bannerabout() {
 	)
 };
 
+export function BannerServices() {
+	return (
+		<section className={styles.home1}>
+			<div className={styles.bannercontainer1}>
+  				<div className={styles.bannertext1}>
+    				<h1 className={styles.btext1}>Our Services</h1>
+  				</div>
+  			  <span className={styles.spantext1}>Impervious</span>
+			</div>
+		</section>
+	)
+};
+
+export function BannerInvests() {
+	return (
+		<section className={styles.home1}>
+			<div className={styles.bannercontainer1}>
+  				<div className={styles.bannertext1}>
+    				<h1 className={styles.btext1}>Invest Today</h1>
+  				</div>
+  			  <span className={styles.spantext1}>Impervious</span>
+			</div>
+		</section>
+	)
+};
+
 export function Bannerteam() {
 	return (
 		<div className={styles.home}>

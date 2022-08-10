@@ -40,7 +40,7 @@
 
 .counter {
 	position: relative;
-    background-color: #FFE06C;
+    background-color: #202120;
     padding: 100px 0;
     margin-bottom: 20px;
     display: block;
@@ -84,6 +84,10 @@
 	flex: 0 0 50%;
     max-width: 50%;
 	}
+
+    .bigtext {
+        font-size: 45px!important;
+    }
 }
 
 .counterbox {
@@ -96,7 +100,7 @@
 
 .counterbox h1 {
 	font-size: 70px;
-    color: #202120;
+    color: #fff;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     margin: 0px 0px 10px 0px;
@@ -117,10 +121,11 @@
     font-weight: 700;
     margin: 0px;
     text-align: center;
+    color: #fff;
 }
 
 .bigtext {
-	font-size: 240px;
+	font-size: 180px;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -135,13 +140,13 @@
     opacity: 0.2;
     display: inline-block;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #C6C6C6;
 }
 
 .counter::after {
 	position: absolute;
     content: '';
-    background-color: #202120;
+    background-color: #FFE06C;
     left: 20px;
     right: 20px;
     bottom: -20px;

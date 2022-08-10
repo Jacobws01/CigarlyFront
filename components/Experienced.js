@@ -1,8 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { FaPaperPlane, FaGlobe } from 'react-icons/fa'
+import { GrNotes } from 'react-icons/gr'
+import { BiCoinStack, BiLineChart } from 'react-icons/bi'
 import { HiUsers } from 'react-icons/hi'
-import { GiGears } from 'react-icons/gi'
+import { GiGears, GiPapers } from 'react-icons/gi'
+import { FcLineChart } from 'react-icons/fc'
+import { RiFileList2Line } from 'react-icons/ri'
 
 import styles from '../styles/Experienced.module.css'
 
@@ -17,9 +20,9 @@ function Experienced() {
                             <div className={styles.singlebox1}>
                                 <div className={styles.featurebox}>
                                     <div className={styles.icondiv}>
-                                        <FaPaperPlane className={styles.icon}/>
+                                        <RiFileList2Line className={styles.icon}/>
                                     </div>
-                                    <h4>our mission</h4>
+                                    <h4>OUR SERVICES</h4>
                                     <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor</p>
                                     <span className={styles.count}>01</span>
                                 </div>
@@ -27,9 +30,9 @@ function Experienced() {
                             <div className={styles.singlebox2}>
                                 <div className={styles.featurebox}>
                                     <div className={styles.icondiv}>
-                                        <FaGlobe className={styles.icon}/>
+                                        <BiCoinStack className={styles.icon1}/>
                                     </div>
-                                    <h4>our vision</h4>
+                                    <h4>OUR FUNDS</h4>
                                     <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor</p>
                                     <span className={styles.count}>02</span>
                                 </div>
@@ -47,9 +50,9 @@ function Experienced() {
                             <div className={styles.singlebox4}>
                                 <div className={styles.featurebox}>
                                     <div className={styles.icondiv}>
-                                        <GiGears className={styles.icon}/>
+                                        <BiLineChart className={styles.icon}/>
                                     </div>
-                                    <h4>our strategy</h4>
+                                    <h4>ANALYSIS</h4>
                                     <p>Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor</p>
                                     <span className={styles.count}>04</span>
                                 </div>
@@ -60,22 +63,17 @@ function Experienced() {
                     <div className={styles.rightdiv}>
                         <div className={styles.rightfttext}>
                             <div className={styles.sectitle}>
-                                <span className={styles.titletag}>know more about cigarely</span>
-                                <h2>we have 25 years of experience in this field</h2>
+                                <span className={styles.titletag}>know more about Panoramic</span>
+                                <h2>Investing in cryptocurrencies since 2013</h2>
                             </div>
-                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin, 
-                            lorem quis biben dum auctor, 
-                            nisi elit consequat ipsum, nec sagittis sem nibh id elit. 
-                            Duis sed odio sit amet nibh vultate cursus a sit amet as well.
-                            </p>
+                            <p>Panoramic uses a traditional fund management approach coupled with new age technologists to provide investors with an advanced crypto portfolio.
+                            We provide the ability for investors to be significantly diversified or be extremely concentrated.</p>
                             <ul className={styles.featureicons}>
                                 <li>
                                     <Image src='/icon-1.png' width={77} height={80} alt='icon' />
-                                    <h6>cigar roll</h6>
                                 </li>
                                 <li>
                                     <Image src='/icon-3.png' width={80} height={80} alt='icon' />
-                                    <h6>cigar roll</h6>
                                 </li>
                             </ul>
                             <a className={styles.rightmainbtn} href="/">explore more</a>

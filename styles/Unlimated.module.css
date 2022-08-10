@@ -6,7 +6,7 @@
 
 .homeherolight {
   color: #fff;
-  padding: 160px 0;
+  padding: 90px 0;
 }
 
 .rowhome {
@@ -54,7 +54,7 @@
 }
 
 .topline {
-  color: #e8b600;
+  color: #202120;
   font-size: 18px;
   line-height: 16px;
   font-weight: 700;
@@ -68,8 +68,8 @@
   font-size: 54px;
   line-height: 1.1;
   font-weight: 600;
-  color: #1c2237;
-  font-family: 'Oswald', sans-serif;
+  color: #202120;
+  font-family: 'Lora', serif;
 }
 
 .homeherosubtitledark {
@@ -98,8 +98,9 @@
 
 .herobutton:hover {
   color: #202120;
-  background-color: #FFE06C;
-  transition: all 0.2s ease-out;
+  background-color: #FFF;
+  transition: all 0.4s ease-out;
+  border: 2px solid #202120;
 }
 
 .herobutton1 {

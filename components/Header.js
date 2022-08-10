@@ -2,7 +2,6 @@ import { useContext, useState, useEffect } from "react";
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import AuthContext from '../context/AuthContext'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Dropdown, Dropdown2 } from './Dropdown';
 
@@ -37,13 +36,11 @@ function Header() {
         router.back()
     }
 
-    const { user } = useContext(AuthContext)
-
     return (
       <div className={styles.navbar}>
           <div className={styles.navbarcontainer}>
                 <Link href="/"><div className={styles.navbarlogo}>
-                    <Image className={styles.navbaricon} src="/logo.png" width={150} height={60} />
+                    <Image className={styles.navbaricon} src="/logo1.png" width={60} height={60} />
                   </div></Link>
                   <div className={styles.menuicon} onClick={handleClick} >
           {click ? <FaTimes /> : <FaBars />}
@@ -56,44 +53,29 @@ function Header() {
           </Link>
           </li>
           <li className={styles.navitem}>
-          <Link href="/shop" onClick={closeMobileMenu}>
-            <a className={styles.navlinks}>SHOP</a>
+          <Link href="/OurServices" onClick={closeMobileMenu}>
+            <a className={styles.navlinks}>Our Services</a>
+          </Link>
+          </li>
+          <li className={styles.navitem}>
+          <Link href="/Invest" onClick={closeMobileMenu}>
+            <a className={styles.navlinks}>Invest</a>
+          </Link>
+          </li>
+          <li className={styles.navitem}>
+          <Link href="/Funds" onClick={closeMobileMenu}>
+            <a className={styles.navlinks}>FUNDS</a>
           </Link>
           </li>
           <li className={styles.navitem}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}>
           <Link href="/about" onClick={closeMobileMenu}>
-            <a className={styles.navlinks}>ABOUT US</a>
+            <a className={styles.navlinks}>ABOUT ↴</a>
           </Link>
           {dropdown && <Dropdown />}
           </li>
-          <li className={styles.navitem}>
-          <Link href="/contact" onClick={closeMobileMenu}>
-            <a className={styles.navlinks}>CONTACT</a>
-          </Link>
-          </li>
         </ul>
-        <div className={styles.clockholder}>
-        <div className={styles.clockdiv}>
-          <Image src="/clock-icon.png" width={60} height={60} />
-        </div>
-        <div className={styles.clocktext}>
-          <h5>BUY NOW</h5>
-          <p>206-200-1961</p>
-        </div>
-        </div>
-        <div className={styles.auth}>
-          {user ? (
-            <Link href="/account">
-              <a className={styles.navlinkslog}>{user.email}</a>
-            </Link>
-          ) : (
-            <Link href="/login">
-              <a className={styles.navlinkslog}>Login</a>
-            </Link>
-          )}
-        </div>
             </div>
             </div>   
     )

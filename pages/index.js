@@ -1,23 +1,21 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import { AiFillStar } from 'react-icons/ai'
-import { ImStarHalf } from 'react-icons/im'
+import { FaBookReader, FaLaptop} from 'react-icons/fa'
+import { GiBlackBook } from 'react-icons/gi'
 import Ourproducts from '../components/Ourproducts'
 import Experienced from '../components/Experienced'
 import styles from '../styles/Shop.module.css'
-import Buybutton from '../components/Buybutton'
 import SuperSectionB from '../components/Super'
 import Counterup from '../components/Counterup'
 
-import { fromImageToUrl, API_URL, } from '../utils/urls'
 
-export default function Home({ products1, products2, products3, products4, products5, products6 }) {
+export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ecommerce</title>
-        <link rel="icon" href="/icon-1.png" />
+        <title>Panoramic Capital</title>
+        <link rel="icon" href="/logo1.png" />
       </Head>
       <Ourproducts />
       <Experienced />
@@ -25,201 +23,90 @@ export default function Home({ products1, products2, products3, products4, produ
        <section className={styles.shopsection}>
             <div className={styles.container}>
                 <div className={styles.sectitle}>
-                   <span className={styles.titletag}>shop</span> 
-                   <h2>exlore new strains</h2>
+                   <span className={styles.titletag}>Offerings</span> 
+                   <h2>Our Services</h2>
                 </div>
                 <div className={styles.shopholder}>
                     <ul className={styles.selector}>
                         <li className={styles.selectoritem}>
-                            <a className={styles.selectorlink}>Torpedo Cigars</a>
+                            <a className={styles.selectorlink}>Crypto Course</a>
                         </li>
                         <li className={styles.selectoritem}>
-                            <a className={styles.selectorlink}>Belicoso Cigars</a>
+                            <a className={styles.selectorlinkcenter}>Portfolio Consulting</a>
                         </li>
                         <li className={styles.selectoritem}>
-                            <a className={styles.selectorlink}>Pirámide Cigars</a>
+                            <a className={styles.selectorlink}>One-on-One Coaching</a>
                         </li>
                     </ul>
-                    <div className={styles.itemholder}>
-                        <div className={styles.shopitems1}>
-                            <div className={styles.indgrid}>
-                                <div className={styles.productimage}>
-                                    <a className={styles.shopdetails} href="/">
-                                        <Image className={styles.pic1} src="/01.png" width={300} height={300}/>
-                                    </a>
-                                    {products1.map(products => (   
-                                    <div key={products.name} className={styles.shopbutton}>
-                                      <Buybutton products={products} /> 
-                                    </div>
-                                    ))}
-                                    <div className={styles.ratestars}>
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <ImStarHalf />
-                                    </div>
-                                </div> 
-                                {products1.map(products => (          
-                                <div key={products.name} className={styles.productcontent}>
-                                    <h4 className={styles.producttitle}>
-                                        <a href="/">{products.name}</a>
-                                    </h4>
-                                    <div className={styles.productprice}>${products.price}</div>
-                                    <p>{products.content}</p>
-                                </div>
-                                ))}
-                            </div>
-                        </div>
-                        <div className={styles.shopitems2}>
-                            <div className={styles.indgrid}>
-                                <div className={styles.productimage}>
-                                    <a className={styles.shopdetails} href="/">
-                                        <Image className={styles.pic1} src="/02.png" width={300} height={300}/>
-                                    </a>
-                                    {products2.map(products => (   
-                                    <div key={products.name} className={styles.shopbutton}>
-                                      <Buybutton products={products} /> 
-                                    </div>
-                                    ))}
-                                    <div className={styles.ratestars}>
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                    </div>
-                                </div> 
-                              {products2.map(products => (            
-                                <div key={products.name} className={styles.productcontent}>
-                                    <h4 className={styles.producttitle}>
-                                        <a href="/">{products.name}</a>
-                                    </h4>
-                                    <div className={styles.productprice}>${products.price}</div>
-                                    <p>{products.content}</p>
-                                </div>
-                                ))}
-                            </div>
-                            </div>
-                            <div className={styles.shopitems3}>
-                            <div className={styles.indgrid}>
-                                <div className={styles.productimage}>
-                                    <a className={styles.shopdetails} href="/">
-                                        <Image className={styles.pic1} src="/03.png" width={300} height={300}/>
-                                    </a>
-                                     {products3.map(products => (   
-                                    <div key={products.name} className={styles.shopbutton}>
-                                      <Buybutton products={products} /> 
-                                    </div>
-                                    ))}
-                                    <div className={styles.ratestars}>
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                    </div>
-                                </div> 
-                              {products3.map(products => (            
-                                <div key={products.name} className={styles.productcontent}>
-                                    <h4 className={styles.producttitle}>
-                                        <a href="/">{products.name}</a>
-                                    </h4>
-                                    <div className={styles.productprice}>${products.price}</div>
-                                    <p>{products.content}</p>
-                                </div>
-                                ))}
-                            </div>
-                            </div>
-                            <div className={styles.shopitems4}>
-                            <div className={styles.indgrid}>
-                                <div className={styles.productimage}>
-                                    <a className={styles.shopdetails} href="/">
-                                        <Image className={styles.pic1} src="/04.png" width={300} height={300}/>
-                                    </a>
-                                     {products4.map(products => (   
-                                    <div key={products.name} className={styles.shopbutton}>
-                                      <Buybutton products={products} /> 
-                                    </div>
-                                    ))}
-                                    <div className={styles.ratestars}>
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                    </div>
-                                </div> 
-                              {products4.map(products => (            
-                                <div  key={products.name} className={styles.productcontent}>
-                                    <h4 className={styles.producttitle}>
-                                        <a href="/">{products.name}</a>
-                                    </h4>
-                                    <div className={styles.productprice}>${products.price}</div>
-                                    <p>{products.content}</p>
-                                </div>
-                                ))}
-                            </div>
-                            </div>
-                            <div className={styles.shopitems5}>
-                            <div className={styles.indgrid}>
-                                <div className={styles.productimage}>
-                                    <a className={styles.shopdetails} href="/">
-                                        <Image className={styles.pic1} src="/05.png" width={300} height={300}/>
-                                    </a>
-                                     {products5.map(products => (   
-                                    <div key={products.name} className={styles.shopbutton}>
-                                      <Buybutton products={products} /> 
-                                    </div>
-                                    ))}
-                                    <div className={styles.ratestars}>
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <ImStarHalf />
-                                    </div>
-                                </div> 
-                              {products5.map(products => (            
-                                <div key={products.name} className={styles.productcontent}>
-                                    <h4 className={styles.producttitle}>
-                                        <a href="/">{products.name}</a>
-                                    </h4>
-                                    <div className={styles.productprice}>${products.price}</div>
-                                    <p>{products.content}</p>
-                                </div>
-                                ))}
-                            </div>
-                            </div>
-                            <div className={styles.shopitems6}>
-                            <div className={styles.indgrid}>
-                                <div className={styles.productimage}>
-                                    <a className={styles.shopdetails} href="/">
-                                        <Image className={styles.pic1} src="/06.png" width={300} height={300}/>
-                                    </a>
-                                     {products6.map(products => (   
-                                    <div key={products.name} className={styles.shopbutton}>
-                                      <Buybutton products={products} /> 
-                                    </div>
-                                    ))}
-                                    <div className={styles.ratestars}>
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                        <AiFillStar />
-                                    </div>
-                                </div> 
-                              {products6.map(products => (            
-                                <div key={products.name} className={styles.productcontent}>
-                                    <h4 className={styles.producttitle}>
-                                        <a href="/">{products.name}</a>
-                                    </h4>
-                                    <div className={styles.productprice}>${products.price}</div>
-                                    <p>{products.content}</p>
-                                </div>
-                                ))}
-                            </div>
-                            </div>
-                      </div>
+                    <div className={styles.pricingsection}>
+        <div className={styles.pricingwrapper}>
+          <div className={styles.pricingcontainer}>
+           <div>
+            <div className={styles.pricingcontainercard}>
+              <div className={styles.pricingcontainercardinfo}>
+                <div className={styles.icon}>
+                  <FaBookReader />
+                </div>
+                <h3>Zero to Hero Course</h3>
+                <h4>$89</h4>
+                <ul className={styles.pricingcontainerfeatures}>
+                  <li>- Technical Analysis</li>
+                  <li>- What We Invest In</li>
+                  <li>- Crypto Basics Lessons</li>
+                  <li>- Portfolio Setup Guide</li>
+                  <li>- Liquidity Providing</li>
+                  <li>& Staking Maximization</li>
+                  <li>- Exclusive Research</li>
+                  <li>- DeFi darknode setup</li>
+                </ul>
+              </div>
+             </div>
+             </div>
+           <div>
+            <div className={styles.pricingcontainercardmiddle}>
+              <div className={styles.pricingcontainercardinfomiddle}>
+                <div className={styles.iconm}>
+                  <GiBlackBook />
+                </div>
+                <h3 className={styles.bigboy}>Complete Portfolio Advisory</h3>
+                <h4>$119</h4>
+                <p className={styles.parap}>/month</p>
+                <ul className={styles.pricingcontainerfeaturesm}>
+                  <li>- Full Advisory Services</li>
+                  <li>- Everything from Zero to Hero</li>
+                  <li>- Exclusive access to early stage investments</li>
+                  <li>- Complete Personalized Portfolio</li>
+                  <p>We do a full breakdown of your crypto assets & planned future investments. We then do a risk assessment survey to customize your portfolio.</p>
+                  <li>- Portfolio Monitoring</li>
+                  <p> 
+We track your portfolio and this allows us to give you precise updates on how much to buy or how much to sell.
+</p>
+<li>- Personal Manager</li><p>Get a personal telegram contact who can provide you real time updates and answer all questions you may or may not have.
+</p>
+                </ul>
+              </div>
+             </div>
+             </div>
+           <div>
+            <div className={styles.pricingcontainercard}>
+              <div className={styles.pricingcontainercardinfo}>
+                <div className={styles.icon}>
+                  <FaLaptop />
+                </div>
+                <h3>One-on-One Coaching</h3>
+                <h4>$1249</h4>
+                <ul className={styles.pricingcontainerfeatures1}>
+                  <li>Recommended for Beginners. This is one on one coaching sessions from a personal agent. 
+                  Join a call with an agent who will walk you step by step through the entire process.
+                   Buying, Trading, Hot Wallets, Cold Storage, Staying Protected, Staking, 
+                  Liquidity Providing, Portfolio Optimization and Much More.</li>
+                </ul>
+              </div>
+             </div>
+             </div>
+            </div>
+           </div>
+          </div>
                      </div>
                      </div>
                     </section>
@@ -228,26 +115,4 @@ export default function Home({ products1, products2, products3, products4, produ
 
     </div>
   )
-}
-
-export async function getStaticProps() {
-  const products_res = await fetch(`${API_URL}/products/`)
-  const productsfull = await products_res.json()
-  let products1 = productsfull.filter(person1 => person1.price === 79.99);
-  let products2 = productsfull.filter(person2 => person2.price === 34.95);
-  let products3 = productsfull.filter(person3 => person3.price === 27.99);
-  let products4 = productsfull.filter(person4 => person4.price === 59.99);
-  let products5 = productsfull.filter(person5 => person5.price === 39.99);
-  let products6 = productsfull.filter(person6 => person6.price === 64.99);
-
-  return {
-    props: {
-        products1,
-        products2,
-        products3,
-        products4,
-        products5,
-        products6
-    }
-  }
 }

@@ -10,25 +10,25 @@ function SuperSectionB() {
           <div className={styles.rowhomereverse}>
             <div className={styles.col}>
               <div className={styles.homeherotextwrappersuper}>
-                <div className={styles.topline}><p>Amazing Cigars</p></div>
+                <div className={styles.topline}><p>- Invest Today - </p></div>
                 <h1 className={styles.headtextdark}>
-                  Smooth, Heavy, Full-Bodied, Rich and Balanced.
+                  Panoramic Funds
                 </h1>
                 <p className={styles.homeherosubtitledark}
                 >
-                  Lorem Ipsum Dolor Sit Amet, Consectetur. Lorem Ipsum Dolor Sit Amet, Olister. Lorem Ipsum Dolor Sit Amet.
+                  Our funds provide investors a full range of exposure to the cryptocurrency space, spanning from liquidity providing, early-stake tokens and select ecosystem investments.
                 </p>
                 <Link href='/shop'>
                   <a className={styles.herobutton}>
-                    Shop Now
+                    Invest Today
                   </a>
                 </Link>
               </div>
             </div>
             <div className={styles.col}>
               <div className={styles.homeheroimgdivmargin}>
-                <Image className={styles.homeheroimg} src="/skill-img.jpg" alt="cigars" 
-                       width={520} height={550} />
+                <Image className={styles.homeheroimg} src="/J60.jpg" alt="charts" 
+                       width={500} height={600} />
               </div>
             </div>
           </div>

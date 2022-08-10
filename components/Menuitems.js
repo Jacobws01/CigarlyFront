@@ -1,11 +1,11 @@
 export const MenuItems = [
   {
-    title: 'About',
-    path: '/about'
+    title: 'THE FIRM',
+    path: '/Thefirm'
   },
   {
-    title: 'Team',
-    path: '/team'
+    title: 'CONTACT US',
+    path: '/Contact'
   }
 ];
 
@@ -15,16 +15,20 @@ export const MenuItems2 = [
     path: '/'
   },
   {
-    title: 'Shop',
-    path: '/products'
+    title: 'Our Services',
+    path: '/OurServices'
   },
   {
-    title: 'About us',
+    title: 'Invest',
+    path: '/invest'
+  },
+  {
+    title: 'Funds',
+    path: '/funds'
+  },
+  {
+    title: 'About',
     path: '/about'
-  },
-  {
-    title: 'Contact',
-    path: '/contact'
   }
 ];
 

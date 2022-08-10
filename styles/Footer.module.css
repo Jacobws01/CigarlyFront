@@ -112,7 +112,7 @@
 .footerlinkitems2 h3 {
   margin-bottom: 40px;
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lora', serif;
   font-weight: 700;
   font-size: 30px;
   padding-top: 50px;
@@ -143,8 +143,12 @@
   line-height: 38px;
 }
 
+.footerlinkitemslink {
+  font-size: 18px!important;
+}
+
 .footerlinkitemslink:hover {
-  transform: ease 0.2s;
+  transform: ease 0.3s;
   color: #FFE06C;
 }
 
@@ -156,6 +160,7 @@
   color: #202120;
   text-decoration: none;
   margin-bottom: 0px;
+  font-family: 'IBM Plex Mono', monospace, sans-serif;
   margin-top: 0px;
   padding: 0px 35px 0px 35px;
   text-align: center;
@@ -176,7 +181,7 @@
   padding: 18px 45px;
   text-transform: uppercase;
   background-color: #202120;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'IBM Plex Mono', monospace, sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: #fff;
@@ -185,7 +190,7 @@
 
 .dirbtn:hover {
   transition: ease 0.3s;
-  background-color: #E0E0E0;
+  background-color: #fff;
   color: #202120;
 }
 

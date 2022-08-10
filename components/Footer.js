@@ -20,42 +20,36 @@ function Footer() {
         <div className={styles.footerlinkwrapper}>
           <div className={styles.footerlinkitems}>
             <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <p>Impervious uses traditional fund management tactics coupled with new age technologists to provide investors with an advanced crypto portfolio. 
+             We give you the ability to be significantly diversified or be extremely concentrated. 
             </p>
           </div>
           <div className={styles.footerlinkitems2}>
             <h3>Get in Touch</h3>
-            <p>206-200-1961</p>
-            <p>info@webexample.com</p>
-            <p>3717 Stone Ave</p>
-            <p>Seattle, Washington</p>
-            <Link href="/">
-              <a className={styles.dirbtn}>Directions</a>
+            <p>Invest@Panoramic.com</p>
+            <p>Support@Panoramic.com</p>
+            <p>Services@Panoramic.com</p>
+            <Link href="/Contact">
+              <a className={styles.dirbtn}>Get in Touch</a>
             </Link>
           </div>
         </div>
           <div className={styles.footerlinkitems}>
-            <h3>Our Cigars</h3>
-             <Link href="/">
-              <a className={styles.footerlinkitemslink}>Gordito Cigar</a>
+            <h3>Our Pages</h3>
+             <Link href="/OurServices">
+              <a className={styles.footerlinkitemslink}>Our Services</a>
              </Link>
-             <Link href="/">
-              <a className={styles.footerlinkitemslink}>Robusto Cigar</a>
+             <Link href="/Invest">
+              <a className={styles.footerlinkitemslink}>Invest</a>
               </Link>
-             <Link href="/">
-              <a className={styles.footerlinkitemslink}>Cigar Roll</a>
+             <Link href="/Funds">
+              <a className={styles.footerlinkitemslink}>Funds</a>
               </Link>
-             <Link href="/">
-              <a className={styles.footerlinkitemslink}>Cigar Accesories</a>
+             <Link href="/About">
+              <a className={styles.footerlinkitemslink}>About</a>
               </Link>
-             <Link href="/">
-              <a className={styles.footerlinkitemslink}>Cigar cutter</a>
-              </Link>
-             <Link href="/">
-              <a className={styles.footerlinkitemslink}>Cigar Vallet</a>
+             <Link href="/Contact">
+              <a className={styles.footerlinkitemslink}>Contact</a>
               </Link>
         </div>
       </div>
@@ -63,11 +57,10 @@ function Footer() {
         <div className={styles.socialmediawrap}>
           <div className={styles.footerlogo}>
             <a  className={styles.sociallogo}>
-              <GiCigar className={styles.navbaricon} />
-              Cigarely
+              Impervious Capital
             </a>
           </div>
-          <small className={styles.websiterights}>Cigarly © 2021</small>
+          <small className={styles.websiterights}>© 2022 Impervious Capital</small>
           <div className={styles.socialicons}>
             <a
               className={styles.socialiconlink}

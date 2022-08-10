@@ -39,7 +39,7 @@ function Counterup() {
                         ))}
                     </div>
                     <span className={styles.bigtext}>
-                        Cigarely
+                        Panoramic
       </span>
                 </div>
             </div>

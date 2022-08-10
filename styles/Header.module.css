@@ -1,5 +1,4 @@
 .navbar {
-  background: #fff;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -8,7 +7,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 0px;
 }
 
 .navbarcontainer {
@@ -17,11 +16,12 @@
   height: 80px;
   z-index: 1;
   width: 100%;
-  max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 50px;
   padding-left: 50px;
+  position: fixed;
+  background: #e8edf0;
 }
 
 .navbarlogo {
@@ -29,6 +29,7 @@
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
+  margin-left: 90px;
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -50,11 +51,12 @@
   list-style: none;
   text-align: center;
   flex: end;
-  margin-left: 20px;
+  margin-left: 63px;
 }
 
 .navitem {
   height: 80px;
+  margin-right: 12px;
 }
 
 .navlinks {
@@ -64,32 +66,34 @@
   padding: 0.5rem 1rem;
   height: 100%;
   color: #202120;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
+  font-family: 'IBM Plex Mono', monospace, sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .navlinks:hover {
-  color: #FFE06C;
-  transition: 0.2s ease;
+  color: #5B7EDE;
+  transition: 0.5s ease;
 }
 
 .navlinkslog {
   display: flex;
+  font-family: 'IBM Plex Mono', monospace, sans-serif;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
   color: #FFF;
   font-weight: 700;
-  font-size: 19px;
-  background-color: #FFD06C;
+  font-size: 16px;
+  background-color: #202120;
 }
 
 .navlinkslog:hover {
-  color: #534D4D;
-  transition: 0.2s ease;
+  color: #36454F;
+  transition: 0.4s ease;
+  background-color: transparent;
 }
 
 .menuicon {

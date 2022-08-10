@@ -1,11 +1,11 @@
 .topsection {
-	background-image: url(../public/01.jpg);
+	background-image: url(../public/headerwhite3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    margin-bottom: 150px;
-    padding-top: 120px;
+    margin-bottom: 175px;
+    padding-top: 90px;
     padding-bottom: 205px;
     z-index: 1;
 }
@@ -54,7 +54,7 @@
 	justify-content: space-between!important;
 	display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
+    margin-right: -10px;
     margin-left: -15px;
 }
 
@@ -79,8 +79,8 @@
 .titletag {
 	text-transform: uppercase;
     font-weight: 700;
-    color: #FFE06C;
-    font-family: 'Oswald', sans-serif;
+    color: #15182B;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
     line-height: 1;
     font-size: 16px;
     display: inline-block;
@@ -96,18 +96,18 @@
     transform: translateY(-50%);
     height: 2px;
     width: 30px;
-    background-color: #FFE06C;
+    background-color: #15182B;
     content: '';
 }
 
 
 .whitetext {
-	font-size: 48px;
+	font-size: 36px;
     text-transform: uppercase;
     line-height: 1.2;
     letter-spacing: -1px;
-    color: #fff!important;
-    font-family: 'Oswald', sans-serif;
+    color: #28282B!important;
+    font-family: 'Merriweather', serif;
     font-weight: 700;
     margin: 0;
 }
@@ -138,12 +138,12 @@
 }
 
 .mainbutton {
-	background-color: #FFE06C;
+	background-color: #202120;
     border-color: #FFE06C;
     font-size: 14px;
     font-weight: 700;
-    font-family: 'Oswald', sans-serif;
-    color: #202120;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
+    color: #e8edf0;
     text-transform: uppercase;
     transition: all 0.3s ease-out 0s;
     padding: 0 45px;
@@ -151,7 +151,7 @@
     height: 60px;
     line-height: 60px;
     display: inline-block;
-    border-color: #FFE06C!important;
+    border-color: #e8edf0!important;
     border: 2px solid #fff;
 }
 
@@ -162,7 +162,7 @@
     width: 10px;
     height: 2px;
     content: '';
-    background-color: #202120;
+    background-color: #e8edf0;
 }
 
 .mainbutton::after {
@@ -172,33 +172,26 @@
     width: 2px;
     height: 10px;
     content: '';
-    background-color: #202120;
+    background-color: #e8edf0;
     transition: all 0.3s ease-out 0s;
 }
 
 
 .mainbutton:hover {
-  transition: ease 0.3s;
+  transition: ease 0.5s;
   background-color: transparent;
-  color: #fff;
-  border-color: #fff!important;
+  color: #202120!important;
+  border-color: #202120!important;
 }
 
 .mainbutton:hover::before {
-  transition: ease 0.3s;
-  background-color: #fff;
+  transition: ease 0.5s;
+  background-color: #202120;
 }
 
 .mainbutton:hover::after {
-  transition: ease 0.3s;
-  background-color: #fff;
-}
-
-.mainbutton:hover {
-  transition: ease 0.3s;
-  background-color: transparent;
-  color: #fff;
-  border-color: #fff!important;
+  transition: ease 0.5s;
+  background-color: #202120;
 }
 
 .servicesloop {
@@ -238,11 +231,19 @@
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1175px) {
 	.sizerdiv {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 	}
+
+    .topsection {
+        padding-top: 50px;
+    }
+
+    .whitetext {
+        font-size: 27px;
+    }
 
 	.servicesloop {
 		bottom: -225px;
@@ -261,7 +262,7 @@
 	}
 }
 
-@media (max-width: 675px) {
+@media (max-width: 950px) {
 	.servicesloop {
 		bottom: -275px;
 	}
@@ -291,7 +292,7 @@
 	}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 825px) {
 	.singleservicecard {
 		display: none;
 	}
@@ -308,25 +309,26 @@
 
 .singleservicecard {
 	margin: 30px 0 0;
-    border-bottom: 7px solid rgb(0 0 0 / 2%);
+    border-bottom: 9px solid rgb(0 0 0 / 2%);
     background-color: #fff;
-    padding: 60px 30px;
+    padding: 40px 60px;
 }
 
 .singleservicecardblack {
 	margin: 30px 0 0;
     border-bottom: 7px solid rgb(0 0 0 / 2%);
     background-color: #202120;
-    padding: 60px 30px;
+    padding: 45px 30px;
     border-bottom: 9px solid #FFE06C;
 }
 
 .singleservicecard h4 {
 	text-transform: uppercase;
+    margin-top: 18px;
     margin-bottom: 25px;
     font-size: 24px;
     font-weight: 700;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
     line-height: 1.2;
 }
 
@@ -337,14 +339,16 @@
     color: #202120;
     font-size: 16px;
     line-height: 1.6;
+    padding-bottom: 9px;
 }
 
 .singleservicecardblack h4 {
 	text-transform: uppercase;
     margin-bottom: 25px;
+    margin-top: 9px;
     font-size: 24px;
     font-weight: 700;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Merriweather', serif;
     line-height: 1.2;
     color: #fff;
 }
@@ -353,6 +357,7 @@
 	font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-style: normal;
+    margin-bottom: 9px;
     color: #fff;
     font-size: 16px;
     line-height: 1.6;
@@ -382,15 +387,13 @@
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     margin-top: 20px;
+    border-bottom: #050389;
 }
 
 .serviceslink:hover {
-	transition: ease 0.2s;
-	color: #fff;
-	background-color: #000;
-	padding: 2px 2px;
-	transform: scale(1.02);
-	border-radius: 3px;
+	transition: ease 0.5s;
+	color: #050389;
+    border-bottom: 1px solid #050389;
 }
 
 .serviceslinkblack {
@@ -402,6 +405,6 @@
 }
 
 .serviceslinkblack:hover {
-	transition: ease 0.2s;
+	transition: ease 0.5s;
 	color: #FFF;
 }

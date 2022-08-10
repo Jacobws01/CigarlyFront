@@ -1,5 +1,5 @@
 .shopsection {
-	padding-bottom: 120px;
+	padding-bottom: 9px;
 	padding-top: 0!important;
 	display: block;
 }
@@ -56,7 +56,7 @@
     line-height: 1.2;
     letter-spacing: -1px;
     color: #202120;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 700;
     margin: 0px;
     text-align: center!important;
@@ -67,8 +67,9 @@
     padding-right: 50px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #FFE06C;
-    font-family: 'Oswald', sans-serif;
+    background-color: #202120;
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
     line-height: 1;
     font-size: 16px;
     display: inline-block;
@@ -84,7 +85,7 @@
     transform: translateY(-50%);
     height: 2px;
     width: 30px;
-    background-color: #FFE06C;
+    background-color: #fff;
     content: '';
 }
 
@@ -96,7 +97,7 @@
     transform: translateY(-50%);
     height: 2px;
     width: 30px;
-    background-color: #FFE06C;
+    background-color: #fff;
     content: '';
 }
 
@@ -107,14 +108,20 @@
 }
 
 .selector {
-	background-color: #f7fcff;
-	justify-content: center!important;
+	background-color: #202120;
+	justify-content: space-between!important;
 	border: 0!important;
 	display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+}
+
+@media (max-width: 840px) {
+    .selectorlink {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -142,16 +149,46 @@
 	border-top: 0;
     border-left: 0;
     border-right: 0;
+    margin-left: 9px;
+    font-size: 25px;
     border-bottom: 2px solid transparent;
-    color: #202120;
+    color: #fff;
     font-family: 'Oswald', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     padding: 12px 25px;
     cursor: pointer;
     border: 1px solid transparent;
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
     display: block;
+}
+
+.selectorlinkcenter {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: 27px;
+    margin-left: 75px;
+    border-bottom: 2px solid transparent;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    padding: 12px 25px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    .selectorlink {
+        font-size: 20px;
+    }
+
+    .selectorlinkcenter {
+        font-size: 20px;
+    }
 }
 
 .itemholder {
@@ -274,6 +311,10 @@
 	.shopitems1 {
 		left: 25%;
 	}
+
+    .selectorlinkcenter {
+    margin-left: 0px;
+    }
 
 	.shopitems2 {
       left: 25%;
@@ -458,5 +499,256 @@
     font-family: 'Oswald', sans-serif;
     margin: 0 0 20px 0;
     display: block;
+}
+
+.pricingsection {
+  padding: 54px 0 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fafafa;
+}
+
+.pricingcontainercard {
+  background-color: #f39f86;
+background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.3);
+  width: 325px;
+  height: 625px;
+  text-decoration: none;
+  border: 4px solid #202120;
+}
+
+
+.pricingcontainercardmiddle {
+  transform: scale(1.05);
+  background: #242424;
+  box-shadow: 2px;
+  width: 325px;
+  height: 700px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.pricingcontainercard:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-out;
+  color: #1c2237;
+}
+
+.pricingcontainercardmiddle {
+  margin: 0 18px;
+}
+
+.pricingcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricingwrapper {
+  display: flex;
+  flex-direction: column;
+  flex: start;
+  margin: 0 auto;
+}
+
+.pricingheading {
+  color: #1c2237;
+  margin-bottom: 24px;
+}
+
+.pricingcontainercardinfo {
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  padding: 24px;
+  align-items: center;
+  color: #202120;
+}
+
+.pricingcontainercardinfomiddle {
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  padding: 24px;
+  align-items: center;
+  color: #fff;
+}
+
+.parap {
+    margin-bottom: 1px!important;
+}
+
+.pricingcontainercardinfo h3 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  margin-top: 0px;
+}
+
+.pricingcontainercardinfo h4 {
+  font-size: 40px;
+  margin: 0px;
+}
+
+.pricingcontainercardinfo p {
+  font-size: 14px;
+  margin-bottom: 24px;
+  margin-top: 0px;
+}
+
+.pricingcontainercardinfomiddle h3 {
+  margin-bottom: 5px;
+  font-size: 24px;
+  margin-top: 0px;
+}
+
+.pricingcontainercardinfomiddle h4 {
+  font-size: 40px;
+  margin: 0px;
+}
+
+.pricingcontainercardinfomiddle p {
+  font-size: 14px;
+  margin-bottom: 24px;
+  margin-top: 0px;
+}
+
+.pricingcontainerfeatures {
+  margin: 16px 0 32px;
+  list-style: none;
+}
+.pricingcontainerfeatures1 {
+  margin: 16px 0 32px;
+  list-style: none;
+}
+.pricingcontainerfeaturesm {
+  margin: 9px 0 32px;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.pricingcontainerfeatures li {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-family:'IBM Plex Mono', monospace, sans-serif;
+  font-size: 20px;
+}
+.pricingcontainerfeatures1 li {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family:'IBM Plex Mono', monospace, sans-serif;
+}
+
+.pricingcontainerfeaturesm li {
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family:'IBM Plex Mono', monospace, sans-serif;
+}
+
+.pricingcontainerfeaturesm p {
+    font-size: 12px;
+    margin-bottom: 9px!important;
+}
+
+.pricingcontainerfeatures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+.pricingcontainerfeatures1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.icon {
+  margin: 15px 0px 0px 0px;
+  font-size: 64px;
+}
+
+.iconm {
+  margin: 0px 0px 0px 0px;
+  font-size: 64px;
+}
+
+
+.btn {
+  padding: 12px 64px;
+  font-size: 20px;
+  background-color: #242424;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #f00946;
+  transition: all 0.2s ease-out;
+}
+
+.btnmiddle {
+  padding: 12px 64px;
+  font-size: 20px;
+  background-color: #276afb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btnmiddle:hover {
+  color: black;
+  background-color: #E9E9E9;
+  transition: all 0.2s ease-out;
+}
+
+.bigboy {
+    font-size: 20px!important;
+}
+
+@media screen and (max-width: 1100px) {
+    .pricingcontainercard {
+        width: 290px;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+  .pricingcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .pricingwrapper {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricingcontainercardmiddle {
+    transform: scale(1);
+    margin: 24px;
+  }
+
+  .pricingcontainercard:hover {
+    transform: none;
+  }
 }
 

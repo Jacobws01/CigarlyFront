@@ -128,21 +128,16 @@
 	text-align: center!important;
 	display: block;
 	line-height: 80px;
-	background-color: #FFE06C;
-	text-align: center;
-}
-
-.icondiv:hover {
-	transition: ease 0.2s;
 	background-color: #202120;
+	text-align: center;
 }
 
 
 .icon {
-	color: #202120;
+	color: #FFF!important;
 	text-align: center;
-    font-size: 24px;
-    transition: all 0.3s ease-out 0s;
+    font-size: 27px;
+    margin-top: 9px;
     font-weight: 900;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
@@ -151,8 +146,17 @@
     text-rendering: auto;
 }
 
-.icondiv:hover > .icon {
-	color: #fff;
+.icon1 {
+  color: #FFF!important;
+  text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
 }
 
 
@@ -272,9 +276,10 @@
 .titletag {
 	padding-left: 50px;
 	text-transform: uppercase;
+  background-color: #202120;
     font-weight: 700;
-    color: #FFE06C;
-    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
     line-height: 1;
     font-size: 16px;
     display: inline-block;
@@ -289,7 +294,7 @@
     transform: translateY(-50%);
     height: 2px;
     width: 30px;
-    background-color: #FFE06C;
+    background-color: #fff;
     content: '';
 }
 
@@ -314,12 +319,11 @@
 }
 
 .rightmainbtn {
-	background-color: #FFE06C;
-    border-color: #FFE06C;
+	background-color: #202120;
     font-size: 14px;
     font-weight: 700;
-    font-family: 'Oswald', sans-serif;
-    color: #202120;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
+    color: #FFE06C;
     text-transform: uppercase;
     transition: all 0.3s ease-out 0s;
     padding: 0 45px;
@@ -328,8 +332,8 @@
     line-height: 60px;
     display: inline-block;
     border-color: #FFE06C!important;
-    border: 2px solid #fff;
-    margin-top: 40px;
+    border: 3px solid;
+    margin-top: 20px;
 }
 
 .rightmainbtn::before {
@@ -339,7 +343,7 @@
     width: 10px;
     height: 2px;
     content: '';
-    background-color: #202120;
+    background-color: #FFE06C;
 }
 
 .rightmainbtn::after {
@@ -349,13 +353,13 @@
     width: 2px;
     height: 10px;
     content: '';
-    background-color: #202120;
-    transition: all 0.3s ease-out 0s;
+    background-color: #FFE06C;
+    transition: all 0.4s ease-out 0s;
 }
 
 
 .rightmainbtn:hover {
-  transition: ease 0.3s;
+  transition: ease 0.6s;
   background-color: transparent;
   color: #202120;
 }
